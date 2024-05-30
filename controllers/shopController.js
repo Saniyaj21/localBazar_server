@@ -74,7 +74,6 @@ export const getAllShops = async (req, res) => {
 
         const allShops = await Shop.find().populate('owner')
 
-        console.log("ZZZ", req.user);
         
         res.status(200).json({
             success: true,
